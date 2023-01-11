@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+		
+	<script>
+		<!-- program to check the number of occurrence of a character -->
+			var	name=prompt("Enter a name");
+		var letter=prompt("Enter a letter");
+		var word=0;
+		var result=fun(name,letter);
+		function fun(x,y){
+			for (i=0; i< x.length; i++){
+				
+				if (x[i]== y){
+					word++;
+				}
+			}
+			if(word){
+				document.write("This Word "+ word + " same letter");
+			}
+			else{
+				document.write("This Word  has no same letter");
+			}
+		}
+		
+			
+	</script>
+</body>
+</html>
